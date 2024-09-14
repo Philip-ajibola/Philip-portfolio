@@ -3,14 +3,14 @@ import styles from './index.module.css'; // Importing as styles for CSS Modules
 
 const Navbar = () => {
     const [activeNav, setActiveNav] = useState('#home');
+    const[Toggle, showMenu] = useState(false);
 
     return (
-        <>
             <header className={styles.header}>
                 <nav className={`${styles.nav} container`}>
                     <a href="index.html" className={styles.nav_logo}>Abolaji</a>
 
-                    <div className={styles.nav__menu}>
+                    <div className={`${styles.nav__menu} ${Toggle ? styles.show_menu : ''}`}>
                         <ul className={`${styles.nav__list} grid`}>
                             <li className={styles.nav__item}>
                                 <a
@@ -76,12 +76,11 @@ const Navbar = () => {
                         <i className={`uil uil-times ${styles.nav__icon} ${styles.nav__close}`}></i>
                     </div>
 
-                    <div className={styles.nav__toggle}>
+                    <div className={styles.nav__toggle} onClick={() => showMenu (!Toggle)}>
                         <i className={`uil uil-apps ${styles.nav__icon}`}></i>
                     </div>
                 </nav>
             </header>
-        </>
     );
 }
 
