@@ -52,7 +52,7 @@
 /*================== Responsive typography ==================*/
 
 @media screen and (max-width: 992px) {
-  .root {
+  :root {
     --big-font-size: 2.75rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -168,8 +168,20 @@ img{
 }
 
 /*================== BREAKPOINTS ==================*/
+/* For Large device */
 
+@media screen and (max-width: 992px){
+  .container{
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
 
+  }
+
+}
+/* For Medium device */
+@media screen and (max-width: 768px){
+
+}
 
 .App {
   text-align: center;
