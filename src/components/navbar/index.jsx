@@ -46,7 +46,7 @@ const Navbar = () => {
                             </li>
                         </ul>
 
-                        <i className="uil uil-times nav_close"></i>
+                        <i className={`uil uil-times ${styles.nav__close}`}></i>
                     </div>
 
                     <div className={styles.nav__toggle}>
