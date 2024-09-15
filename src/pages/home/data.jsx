@@ -1,17 +1,18 @@
 import React from "react";
+import Styles from "./index.module.css";
 
 const Data = () => {
 
     return (
-        <div className="home__data">
-            <h1 className="home__title">Abisoye Abolaji
+        <div className={Styles.home__data}>
+            <h1 className={Styles.home__title}>Abisoye Abolaji
                 <svg
                     width="36"
                     height="36"
                     viewBox="0 0 48 48"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="home__hand"
+                    className={Styles.home__hand}
                 >
                     <path
                         d="M25.4995 32.0305L31.3495 33.1555L36.1495 8.48051C36.4495 6.83051 35.3995 5.18051 33.8245 4.88051C32.1745 4.58051 30.5995 5.70551 30.2995 7.35551L25.4995 32.0305Z"
@@ -55,8 +56,8 @@ const Data = () => {
                     ></path>
                 </svg>
             </h1>
-            <h3 className="home__subtitle"> Software Engineer </h3>
-            <p className="home__description"> I'm a passionate software engineer based in Lagos, Nigeria. I specialize
+            <h3 className={Styles.home__subtitle}> Software Engineer </h3>
+            <p className={Styles.home__description}> I'm a passionate software engineer based in Lagos, Nigeria. I specialize
                 in building innovative and efficient solutions that drive impactful digital experiences.</p>
 
             <a href="#contact" className="button button--flex">

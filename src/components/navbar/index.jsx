@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
             <header className={styles.header}>
                 <nav className={`${styles.nav} container`}>
-                    <a href="index.html" className={styles.nav_logo}>Abolaji</a>
+                    <a href="index.html" className={styles.nav__logo}>Abolaji</a>
 
                     <div className={`${styles.nav__menu} ${Toggle ? styles.show_menu : ''}`}>
                         <ul className={`${styles.nav__list} grid`}>
