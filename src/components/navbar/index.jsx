@@ -73,7 +73,7 @@ const Navbar = () => {
                             </li>
                         </ul>
 
-                        <i className={`uil uil-times ${styles.nav__icon} ${styles.nav__close}`}></i>
+                        <i className={`uil uil-times ${styles.nav__icon} ${styles.nav__close}`} onClick={() => showMenu(!Toggle)}></i>
                     </div>
 
                     <div className={styles.nav__toggle} onClick={() => showMenu (!Toggle)}>
