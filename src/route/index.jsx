@@ -7,6 +7,10 @@ export const ROUTE = [
         path: "/",
         element: <Layout/>,
         children: [
+            {
+                path: "",
+                element: <Home />,
+            },
 
             {
                 path: "/myPortfolio",
