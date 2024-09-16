@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./index.module.css";
+import Styles from "./Home.module.css";
 
 const ScrollDown = () => {
     return(

@@ -1,12 +1,12 @@
 import React from "react";
-import Styles from "./index.module.css";
+import Styles from "./Home.module.css";
 import Social from "./social";
 import Data from "./data";
 import ScrollDown from"./scrollDown";
 const Home = () => {
 
     return (
-        // <section className={Styles.home} id="home">
+        <section className={Styles.home__section} id="home">
             <div className={`${Styles.home__container} `}>
                 <div className={`${Styles.home__content} grid`}>
                     <Social />
@@ -18,7 +18,7 @@ const Home = () => {
                 <ScrollDown/>
 
             </div>
-        // </section>
+         </section>
     );
 }
 

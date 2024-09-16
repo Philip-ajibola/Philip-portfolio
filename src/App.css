@@ -174,23 +174,43 @@ img{
   .container{
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
+  }
 
+  .button{
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon{
+    width: 22px;
+    height: 22px;
   }
 
 }
 /* For Medium device */
 @media screen and (max-width: 768px){
+  .home__container{
+    margin-left: 20px;
+  }
+  .home__section{
+    padding: 2rem 0 4rem;
+
+  }
 
 }
 @media screen and (max-width: 576px){
 
 }/* For Small device */
 @media screen and (max-width: 350px){
+  :root{
+    --big-font-size: 2.25rem;
+  }
+
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
 
   }
+
 }
 
 .App {

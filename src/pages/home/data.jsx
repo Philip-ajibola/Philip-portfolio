@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./index.module.css";
+import Styles from "./Home.module.css";
 
 const Data = () => {
 
@@ -58,7 +58,8 @@ const Data = () => {
             </h1>
             <h3 className={Styles.home__subtitle}> Software Engineer </h3>
             <p className={Styles.home__description}> I'm a passionate software engineer based in Lagos, Nigeria. I specialize
-                in building innovative and efficient solutions that drive impactful digital experiences.</p>
+                in building innovative and efficient solutions that drive impactful digital experiences.
+            </p>
 
             <a href="#contact" className="button button--flex">
                 Say Hello
