@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import Home from "../pages/home/Home";
+import About from "../pages/about/About";
 
 export const ROUTE = [
 
@@ -15,7 +16,8 @@ export const ROUTE = [
             {
                 path: "/myPortfolio",
                 element: <Home/>,
-            }
+            },
+
         ]
 
 
