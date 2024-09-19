@@ -5,6 +5,7 @@ import Data from "./Data";
 import ScrollDown from "./ScrollDown";
 import About from "../about/About"
 import Skills from "../skills/Skills";
+import Projects from "../projects/Projects";
 
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
                 {/* Render the About component */}
                 <About />
                 <Skills/>
+                <Projects/>
             </div>
         </section>
     );

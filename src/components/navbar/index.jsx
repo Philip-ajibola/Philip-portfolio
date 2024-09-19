@@ -44,11 +44,11 @@ const Navbar = () => {
 
                             <li className={styles.nav__item}>
                                 <a
-                                    href="#services"
-                                    className={`${styles.nav__link} ${activeNav === '#services' ? styles.active_link : ''}`}
-                                    onClick={() => setActiveNav('#services')}
+                                    href="#projects"
+                                    className={`${styles.nav__link} ${activeNav === '#projects' ? styles.active_link : ''}`}
+                                    onClick={() => setActiveNav('#projects')}
                                 >
-                                    <i className={`uil uil-briefcase-alt ${styles.nav__icon}`}></i> Services
+                                    <i className={`uil uil-briefcase-alt ${styles.nav__icon}`}></i> Projects
                                 </a>
                             </li>
 
