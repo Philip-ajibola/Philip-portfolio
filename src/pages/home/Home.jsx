@@ -6,6 +6,7 @@ import ScrollDown from "./ScrollDown";
 import About from "../about/About"
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
+import Qualification from "../qualification/Qualification";
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
                 <About />
                 <Skills/>
                 <Projects/>
+                <Qualification/>
             </div>
         </section>
     );
