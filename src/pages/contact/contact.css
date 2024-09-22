@@ -1,0 +1,87 @@
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+
+.contact__title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact__subtitle {
+    text-align: center;
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--container-color);
+}
+
+.contact__info {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.contact__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.contact__card-icon {
+    font-size: 2rem;
+    margin-bottom: var(--mb-0-25);
+    color: var(--title-color);
+}
+
+.contact__card-title,
+.contact__card-data {
+    font-size: var(--small-font-size);
+
+}
+
+.contact__form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact__form-div {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.contact__form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.contact__form-area {
+    grid-column: 1 / -1;
+}
+
+.contact__form-tag {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--title-color);
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

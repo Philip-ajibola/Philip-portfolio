@@ -8,6 +8,7 @@ import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
 import Qualification from "../qualification/Qualification";
 import Testimonials from "../testimonials/Testimonials";
+import Contact from "../contact/Contact";
 
 const Home = () => {
     return (
@@ -29,6 +30,7 @@ const Home = () => {
                 <Projects/>
                 <Qualification/>
                 <Testimonials/>
+                <Contact/>
             </div>
         </section>
     );
