@@ -5,10 +5,10 @@ const Navbar = () => {
     useEffect(() => {
         if (typeof window !== "undefined") {
             const handleScroll = () => {
-                const header = document.querySelector(`.${styles.header}`); // Adjusted for CSS modules
+                const header = document.querySelector(`.${styles.header}`);
                 if (header) {
                     if (window.scrollY >= 80) {
-                        header.classList.add(styles.scrollHeader); // Use CSS module class
+                        header.classList.add(styles.scrollHeader);
                     } else {
                         header.classList.remove(styles.scrollHeader);
                     }
@@ -52,5 +52,4 @@ const Navbar = () => {
         </header>
     );
 };
-
 export default Navbar;
