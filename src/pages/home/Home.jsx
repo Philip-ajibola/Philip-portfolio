@@ -9,6 +9,7 @@ import Projects from "../projects/Projects";
 import Qualification from "../qualification/Qualification";
 import Testimonials from "../testimonials/Testimonials";
 import Contact from "../contact/Contact";
+import ScrollUp from "../scrollup/ScrollUp";
 
 const Home = () => {
     return (
@@ -32,7 +33,9 @@ const Home = () => {
                 <Testimonials/>
                 <Contact/>
             </div>
+
         </section>
+
     );
 }
 

@@ -1,87 +1,56 @@
-import React, { useState } from 'react';
-import styles from './index.module.css'; // Importing as styles for CSS Modules
+import React, { useEffect, useState } from 'react';
+import styles from './index.module.css';
 
 const Navbar = () => {
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const handleScroll = () => {
+                const header = document.querySelector(`.${styles.header}`); // Adjusted for CSS modules
+                if (header) {
+                    if (window.scrollY >= 80) {
+                        header.classList.add(styles.scrollHeader); // Use CSS module class
+                    } else {
+                        header.classList.remove(styles.scrollHeader);
+                    }
+                }
+            };
+
+            window.addEventListener("scroll", handleScroll);
+            return () => {
+                window.removeEventListener("scroll", handleScroll);
+            };
+        }
+    }, []);
+
     const [activeNav, setActiveNav] = useState('#home');
-    const[Toggle, showMenu] = useState(false);
+    const [toggle, showMenu] = useState(false);
 
     return (
-            <header className={styles.header}>
-                <nav className={`${styles.nav} container`}>
-                    <a href="index.html" className={styles.nav__logo}>Abolaji</a>
-
-                    <div className={`${styles.nav__menu} ${Toggle ? styles.show_menu : ''}`}>
-                        <ul className={`${styles.nav__list} grid`}>
-                            <li className={styles.nav__item}>
+        <header className={styles.header}>
+            <nav className={`${styles.nav} container`}>
+                <a href="#home" className={styles.nav__logo}>Abolaji</a>
+                <div className={`${styles.nav__menu} ${toggle ? styles.show_menu : ''}`}>
+                    <ul className={`${styles.nav__list} grid`}>
+                        {['home', 'about', 'skills', 'projects', 'qualifications', 'testimonials', 'contact'].map(section => (
+                            <li className={styles.nav__item} key={section}>
                                 <a
-                                    href="#home"
-                                    className={`${styles.nav__link} ${activeNav === '#home' ? styles.active_link : ''}`}
-                                    onClick={() => setActiveNav('#home')}
+                                    href={`#${section}`}
+                                    className={`${styles.nav__link} ${activeNav === `#${section}` ? styles.active_link : ''}`}
+                                    onClick={() => setActiveNav(`#${section}`)}
                                 >
-                                    <i className={`uil uil-estate ${styles.nav__icon}`}></i> Home
+                                    <i className={`uil uil-${section === 'home' ? 'estate' : section} ${styles.nav__icon}`}></i> {section.charAt(0).toUpperCase() + section.slice(1)}
                                 </a>
                             </li>
-
-                            <li className={styles.nav__item}>
-                                <a
-                                    href="#about"
-                                    className={`${styles.nav__link} ${activeNav === '#about' ? styles.active_link : ''}`}
-                                    onClick={() => setActiveNav('#about')}
-                                >
-                                    <i className={`uil uil-user ${styles.nav__icon}`}></i> About
-                                </a>
-                            </li>
-
-                            <li className={styles.nav__item}>
-                                <a
-                                    href="#skills"
-                                    className={`${styles.nav__link} ${activeNav === '#skills' ? styles.active_link : ''}`}
-                                    onClick={() => setActiveNav('#skills')}
-                                >
-                                    <i className={`uil uil-file-alt ${styles.nav__icon}`}></i> Skills
-                                </a>
-                            </li>
-
-                            <li className={styles.nav__item}>
-                                <a
-                                    href="#projects"
-                                    className={`${styles.nav__link} ${activeNav === '#projects' ? styles.active_link : ''}`}
-                                    onClick={() => setActiveNav('#projects')}
-                                >
-                                    <i className={`uil uil-briefcase-alt ${styles.nav__icon}`}></i> Projects
-                                </a>
-                            </li>
-
-                            <li className={styles.nav__item}>
-                                <a
-                                    href="#portfolio"
-                                    className={`${styles.nav__link} ${activeNav === '#portfolio' ? styles.active_link : ''}`}
-                                    onClick={() => setActiveNav('#portfolio')}
-                                >
-                                    <i className={`uil uil-scenery ${styles.nav__icon}`}></i> Portfolio
-                                </a>
-                            </li>
-
-                            <li className={styles.nav__item}>
-                                <a
-                                    href="#contact"
-                                    className={`${styles.nav__link} ${activeNav === '#contact' ? styles.active_link : ''}`}
-                                    onClick={() => setActiveNav('#contact')}
-                                >
-                                    <i className={`uil uil-message ${styles.nav__icon}`}></i> Contact
-                                </a>
-                            </li>
-                        </ul>
-
-                        <i className={`uil uil-times ${styles.nav__icon} ${styles.nav__close}`} onClick={() => showMenu(!Toggle)}></i>
-                    </div>
-
-                    <div className={styles.nav__toggle} onClick={() => showMenu (!Toggle)}>
-                        <i className={`uil uil-apps ${styles.nav__icon}`}></i>
-                    </div>
-                </nav>
-            </header>
+                        ))}
+                    </ul>
+                    <i className={`uil uil-times ${styles.nav__icon} ${styles.nav__close}`} onClick={() => showMenu(!toggle)}></i>
+                </div>
+                <div className={styles.nav__toggle} onClick={() => showMenu(!toggle)}>
+                    <i className={`uil uil-apps ${styles.nav__icon}`}></i>
+                </div>
+            </nav>
+        </header>
     );
-}
+};
 
 export default Navbar;

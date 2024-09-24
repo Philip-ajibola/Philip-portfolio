@@ -2,6 +2,26 @@ import React from 'react';
 import "./contact.css";
 
 const Contact = () => {
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const response = await fetch("https://formspree.io/f/xqazvdep", {
+            method: "POST",
+            body: formData,
+            headers: {
+                Accept: "application/json"
+            }
+        });
+
+        if (response.ok) {
+            alert("Message sent successfully!");
+            event.target.reset();
+        } else {
+            alert("There was a problem sending your message.");
+        }
+    };
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Get in touch</h2>
@@ -14,10 +34,9 @@ const Contact = () => {
                     <div className="contact__info">
                         {/* Email Card */}
                         <div className="contact__card">
-                            <i className="bx bx-mail-send contact__card-icon"></i> {/* Correct icon */}
+                            <i className="bx bx-mail-send contact__card-icon"></i>
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">Abisoyeabolaji2k21@gmail.com</span>
-
                             <a href="mailto:Abisoyeabolaji2k21@gmail.com" className="contact__button">
                                 Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -26,10 +45,9 @@ const Contact = () => {
 
                         {/* WhatsApp Card */}
                         <div className="contact__card">
-                            <i className="bx bxl-whatsapp contact__card-icon"></i> {/* Correct icon */}
+                            <i className="bx bxl-whatsapp contact__card-icon"></i>
                             <h3 className="contact__card-title">WhatsApp</h3>
                             <span className="contact__card-data">+2348165269244</span>
-
                             <a href="https://wa.me/2348165269244" className="contact__button" target="_blank" rel="noopener noreferrer">
                                 Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -41,24 +59,23 @@ const Contact = () => {
                 {/* Contact Form Section */}
                 <div className="contact__content">
                     <h3 className="contact__title">Write me your project</h3>
-
-                    <form className="contact__form">
+                    <form className="contact__form" onSubmit={handleSubmit}>
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
                             <input type="text" name="name" className="contact__form-input"
-                                   placeholder="Insert your name sir/ma" />
+                                   placeholder="Insert your name sir/ma" required />
                         </div>
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Mail</label>
                             <input type="email" name="email" className="contact__form-input"
-                                   placeholder="Insert your email sir/ma" />
+                                   placeholder="Insert your email sir/ma" required />
                         </div>
                         <div className="contact__form-div contact__form-area">
                             <label className="contact__form-tag">Project</label>
                             <textarea name="project" cols="30" rows="10"
-                                      className="contact__form-input" placeholder="Write your project" />
+                                      className="contact__form-input" placeholder="Write your project" required />
                         </div>
-                        <button className="button button--flex">
+                        <button className="button button--flex" type="submit">
                             Send Message
                             <svg
                                 className="button__icon"
