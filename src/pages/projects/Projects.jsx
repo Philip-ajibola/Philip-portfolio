@@ -75,7 +75,7 @@ const Projects = () => {
                 },
                 {
                     projectName: "Portfolio Website",
-                    githubLink: "https://github.com/username/portfolio-website"
+                    githubLink: "https://my-portfolio-7plcv9rlf-abolaji-s-projects.vercel.app/"
                 },
                 {
                     projectName: "E-commerce App",
