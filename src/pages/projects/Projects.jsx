@@ -80,7 +80,7 @@ const Projects = () => {
                 {
                     projectName: "Book Collection Website",
                     githubLink: "https://bookcollections.vercel.app/"
-                }
+                },
             ]
         },
         {
@@ -118,13 +118,25 @@ const Projects = () => {
             icon: "uil-brain",
             projects: [
                 {
-                    projectName: "Graph Algorithm",
-                    githubLink: "https://github.com/username/graph-algorithm"
+                    projectName: "Archery Game Algorithm",
+                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/ArcheryGame"
                 },
                 {
-                    projectName: "Sorting Optimization",
-                    githubLink: "https://github.com/username/sorting-optimization"
-                }
+                    projectName: "Logistic Workflow Algorithm",
+                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/Back_To_Sender"
+                },
+                {
+                    projectName: "Tic Tac Toe Game Algorithm",
+                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/Tic_Tac_Toe"
+                },
+                {
+                    projectName: "TurtleGraphics Algorithm",
+                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/TurtleGraphics"
+                },
+                {
+                    projectName: "SevenSegment Algorithm",
+                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/SevenSegmentDisplay"
+                },
             ]
         }
     ];
