@@ -18,7 +18,7 @@ const ServiceModal = ({ toggleTab, toggleState, index, title, description, proje
                             <p className="services__modal-info">
                                 {project.projectName} -{" "}
                                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                                    GitHub Repo
+                                    View Project
                                 </a>
                             </p>
                         </li>
@@ -58,20 +58,20 @@ const Projects = () => {
             icon: "uil-web-grid",
             projects: [
                 {
-                    projectName: "Portfolio Website",
-                    githubLink: "https://github.com/username/portfolio-website"
+                    projectName: "Login/SignUp Website",
+                    githubLink: "https://login-page-ten-kappa.vercel.app/"
                 },
                 {
-                    projectName: "E-commerce App",
-                    githubLink: "https://github.com/username/ecommerce-app"
+                    projectName: "Next-Cent App Design",
+                    githubLink: "https://react-next-cent-fiuzb7rtr-abolaji-s-projects.vercel.app/"
                 },
                 {
-                    projectName: "Portfolio Website",
-                    githubLink: "https://github.com/username/portfolio-website"
+                    projectName: "Connectify Website",
+                    githubLink: "https://multilconnect-front-end.vercel.app/"
                 },
                 {
-                    projectName: "E-commerce App",
-                    githubLink: "https://github.com/username/ecommerce-app"
+                    projectName: "BeeJhay Gadget App",
+                    githubLink: "https://bee-jhay-gadget-n77vawvzu-abolaji-s-projects.vercel.app/"
                 },
                 {
                     projectName: "Portfolio Website",
@@ -85,17 +85,31 @@ const Projects = () => {
         },
         {
             title: "Backend Engineer",
-            description: "Experienced in building scalable and efficient backend systems, ensuring performance and security.",
+            description: "Experienced in building scalable and efficient backend systems, " +
+                "ensuring performance and security using Java, Python and JavaScript.",
             icon: "uil-server-network",
             projects: [
                 {
-                    projectName: "API for E-commerce App",
-                    githubLink: "https://github.com/username/ecommerce-backend"
+                    projectName: "Movie Hub REST API",
+                    githubLink: "https://github.com/Abolaji2K21/Movie_Hub"
                 },
                 {
-                    projectName: "Authentication System",
-                    githubLink: "https://github.com/username/authentication-system"
-                }
+                    projectName: "ServiceMatch API",
+                    githubLink: "https://github.com/MultiConnectWeb/MultiConnect"
+                },
+                {
+                    projectName: "Contact Management API",
+                    githubLink: "https://github.com/Abolaji2K21/Cloned_Contact_App_For_Practice"
+                },
+                {
+                    projectName: "Blog Hub REST API",
+                    githubLink: "https://github.com/Abolaji2K21/Modern_Blog"
+                },
+                {
+                    projectName: "Productivity Toolbox API ",
+                    githubLink: "https://github.com/Abolaji2K21/Java_Script_Gate/"
+                },
+
             ]
         },
         {
