@@ -58,6 +58,10 @@ const Projects = () => {
             icon: "uil-web-grid",
             projects: [
                 {
+                    projectName: "Contact Management Website",
+                    githubLink: "https://contact-managment-app-using-react.vercel.app/"
+                },
+                {
                     projectName: "Login/SignUp Website",
                     githubLink: "https://login-page-ten-kappa.vercel.app/"
                 },
