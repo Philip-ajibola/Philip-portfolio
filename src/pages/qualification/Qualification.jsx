@@ -15,6 +15,7 @@ const Qualification = () => {
 
             <div className="qualification__container container">
                 <div className="qualification__tabs">
+                    {/* Education Tab */}
                     <div
                         className={
                             toggleState === 1
@@ -27,6 +28,7 @@ const Qualification = () => {
                         Education
                     </div>
 
+                    {/* Experience Tab */}
                     <div
                         className={
                             toggleState === 2
@@ -35,7 +37,8 @@ const Qualification = () => {
                         }
                         onClick={() => toggleTab(2)}
                     >
-                        <i className="uil uil-briefcase-alt qualification__icon"></i> Experience
+                        <i className="uil uil-briefcase-alt qualification__icon"></i>
+                        Experience
                     </div>
                 </div>
 
@@ -50,10 +53,11 @@ const Qualification = () => {
                     >
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Master of Science - Business Administration</h3>
-                                <span className="qualification__subtitle">Girne American University, Cyprus</span>
+                                <h3 className="qualification__title">Business Training</h3>
+                                <span className="qualification__subtitle">Helen Business School, UK (Conducted by Semicolon in Lagos, Nigeria)
+</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2019 - 2021 (Thesis pending)
+                                    <i className="uil uil-calendar-alt"></i> 2024
                                 </div>
                             </div>
                             <div>
@@ -69,27 +73,37 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                             <div>
-                                <h3 className="qualification__title">Bachelor of Science - Pure and Industrial Chemistry</h3>
+                                <h3 className="qualification__title">Master of Science - Business Administration</h3>
+                                <span className="qualification__subtitle">Girne American University, Cyprus</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i> 2019 - 2021 (Thesis pending)
+                                </div>
+                            </div>
+                            {/*<div>*/}
+                            {/*    <span className="qualification__rounder"></span>*/}
+                            {/*    <span className="qualification__line"></span>*/}
+                            {/*</div>*/}
+                        </div>
+
+                        <div className="qualification__data">
+                            {/*<div></div>*/}
+                            {/*<div>*/}
+                            {/*    <span className="qualification__rounder"></span>*/}
+                            {/*    <span className="qualification__line"></span>*/}
+                            {/*</div>*/}
+                            <div>
+                                <h3 className="qualification__title">Bachelor of Science - Pure and Industrial
+                                    Chemistry</h3>
                                 <span className="qualification__subtitle">University of Lagos, Nigeria</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i> 2013 - 2017
                                 </div>
                             </div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
                         </div>
-
-                        {/*<div className="qualification__data">*/}
-                            {/*<div>*/}
-                            {/*    <h3 className="qualification__title">WASSCE - Science</h3>*/}
-                            {/*    <span className="qualification__subtitle">Bachel Academy, Nigeria</span>*/}
-                            {/*    <div className="qualification__calender">*/}
-                            {/*        <i className="uil uil-calendar-alt"></i> 2006 - 2012*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-                    {/*        <div>*/}
-                    {/*            <span className="qualification__rounder"></span>*/}
-                    {/*            <span className="qualification__line"></span>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
                     </div>
 
                     {/* Experience Section */}
@@ -157,7 +171,6 @@ const Qualification = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
