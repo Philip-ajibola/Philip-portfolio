@@ -29,7 +29,7 @@ const Qualification = () => {
 
                     <div
                         className={
-                             toggleState === 2
+                            toggleState === 2
                                 ? "qualification__button qualification__active button--flex"
                                 : "qualification__button button--flex"
                         }
@@ -50,13 +50,12 @@ const Qualification = () => {
                     >
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Web Designer</h3>
-                                <span className="qualification__subtitle">Spain - Institute</span>
+                                <h3 className="qualification__title">Master of Science - Business Administration</h3>
+                                <span className="qualification__subtitle">Girne American University, Cyprus</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2021 - Present
+                                    <i className="uil uil-calendar-alt"></i> 2019 - 2021 (Thesis pending)
                                 </div>
                             </div>
-
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
@@ -69,44 +68,26 @@ const Qualification = () => {
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-
                             <div>
-                                <h3 className="qualification__title">Art Director</h3>
-                                <span className="qualification__subtitle">Spain - Institute</span>
+                                <h3 className="qualification__title">Bachelor of Science - Pure and Industrial Chemistry</h3>
+                                <span className="qualification__subtitle">University of Lagos, Nigeria</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2020 - 2021
+                                    <i className="uil uil-calendar-alt"></i> 2013 - 2017
                                 </div>
                             </div>
                         </div>
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Web Development</h3>
-                                <span className="qualification__subtitle">Spain - Institute</span>
+                                <h3 className="qualification__title">WASSCE - Science</h3>
+                                <span className="qualification__subtitle">Bachel Academy, Nigeria</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2018 - 2020
+                                    <i className="uil uil-calendar-alt"></i> 2006 - 2012
                                 </div>
                             </div>
-
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div></div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 className="qualification__title">UX Expert</h3>
-                                <span className="qualification__subtitle">Spain - Institute</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2017 - 2018
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,13 +102,12 @@ const Qualification = () => {
                     >
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Product Designer</h3>
-                                <span className="qualification__subtitle">Microsoft - Spain</span>
+                                <h3 className="qualification__title">Software Development Apprentice</h3>
+                                <span className="qualification__subtitle">Semicolon, Lagos, Nigeria</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2021 - Present
+                                    <i className="uil uil-calendar-alt"></i> Oct 2023 - Present
                                 </div>
                             </div>
-
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
@@ -140,30 +120,44 @@ const Qualification = () => {
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-
                             <div>
-                                <h3 className="qualification__title">UX Designer</h3>
-                                <span className="qualification__subtitle">Apple Inc - Spain</span>
+                                <h3 className="qualification__title">Medical Data Analyst</h3>
+                                <span className="qualification__subtitle">Damilola Clinic, Lagos, Nigeria</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2020 - 2021
+                                    <i className="uil uil-calendar-alt"></i> Jan 2021 - Sep 2023
                                 </div>
                             </div>
                         </div>
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Web Designer</h3>
-                                <span className="qualification__subtitle">Figma - Spain</span>
+                                <h3 className="qualification__title">Teaching Assistant</h3>
+                                <span className="qualification__subtitle">Girne American University, Cyprus</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2018 - 2020
+                                    <i className="uil uil-calendar-alt"></i> Sep 2019 - Dec 2020
                                 </div>
                             </div>
-
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
                         </div>
+
+                        <div className="qualification__data">
+                            <div></div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 className="qualification__title">Public Relations Officer (PRO)</h3>
+                                <span className="qualification__subtitle">NYSC Secretariat, Ogun, Nigeria</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i> Mar 2018 - Feb 2019
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
