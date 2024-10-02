@@ -111,17 +111,43 @@
     background-color: var(--body-color);
     z-index: 10;
 }
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/*.button--flex {*/
-/*    display: inline-flex;*/
-/*    align-items: center;*/
-/*    gap: 0.5rem;*/
-/*    padding: 0.75rem 1.5rem;*/
-/*    background-color: var(--title-color);*/
-/*    color: #fff;*/
-/*    border-radius: 0.5rem;*/
-/*    cursor: pointer;*/
-/*}*/
+.modal__content {
+    background: white; /* Solid white background */
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 90%; /* Adjust width as needed */
+    max-width: 500px; /* Optional: limit maximum width */
+}
+
+
+.modal__close-icon {
+    /*position: absolute;*/
+    /*top: 10px;*/
+    /*right: 10px;*/
+    /*cursor: pointer;*/
+    /*font-size: 24px; !* Adjust as necessary *!*/
+    /*color: #333; !* Adjust color *!*/
+    position: absolute;
+    top: 0.1rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+
+}
 
 @media screen and (max-width: 992px) {
     .contact__container {

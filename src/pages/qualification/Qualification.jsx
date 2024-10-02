@@ -77,19 +77,19 @@ const Qualification = () => {
                             </div>
                         </div>
 
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">WASSCE - Science</h3>
-                                <span className="qualification__subtitle">Bachel Academy, Nigeria</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2006 - 2012
-                                </div>
-                            </div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
+                        {/*<div className="qualification__data">*/}
+                            {/*<div>*/}
+                            {/*    <h3 className="qualification__title">WASSCE - Science</h3>*/}
+                            {/*    <span className="qualification__subtitle">Bachel Academy, Nigeria</span>*/}
+                            {/*    <div className="qualification__calender">*/}
+                            {/*        <i className="uil uil-calendar-alt"></i> 2006 - 2012*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
+                    {/*        <div>*/}
+                    {/*            <span className="qualification__rounder"></span>*/}
+                    {/*            <span className="qualification__line"></span>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
                     </div>
 
                     {/* Experience Section */}

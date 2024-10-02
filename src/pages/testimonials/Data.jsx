@@ -1,22 +1,23 @@
 export const Data = [
     {
       id:1,
-      title: "John Doe",
+      title: "Dr Damilola(CEO Damilola Clinic)",
       description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "Great job in organizing and analyzing data at Damilola Clinic, " +
+          "which helped improve overall operations and patient care.",
     },
     {
         id:2,
-        title: "Doe Jackson",
+        title: "Mr Sikiru(Facilitator @ Semicolon Africa)",
         description:
-            "A really good job, all aspects of the project were followed step by step and with good results.",
+            "Impressive work! Every part of the project was handled thoroughly and delivered with great results.",
     },
     {
         id:3,
-        title: "John Doe",
+        title: "Dr Adebayo Tomiwa (Lecturer @ GAU)",
         description:
-            "A really good job, all aspects of the " +
-            "project were followed step by step and with good results.",
+            "Great teamwork, always attentive, and consistently contributed effectively to group projects.",
+
     },
 
 ]
