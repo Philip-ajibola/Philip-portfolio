@@ -19,5 +19,12 @@ export const Data = [
             "Great teamwork, always attentive, and consistently contributed effectively to group projects.",
 
     },
+    {
+        id:4,
+        title: "Mr Philip Ajibola (TeamMate @ Semicolon Africa)",
+        description:
+            "Your leadership made all the difference. Grateful to have had you as our guide.",
+
+    },
 
 ]

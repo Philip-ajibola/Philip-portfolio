@@ -1,5 +1,12 @@
-.testimonial__container {
-    width: 750px;
+/* General Styles */
+.testimonial {
+    padding: 2rem 0;
+}
+
+.testimonial__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px; /* Space between cards */
 }
 
 .testimonial__card {
@@ -7,7 +14,12 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.5rem 2rem;
     border-radius: 1.5rem;
-    margin-bottom: var(--mb-3);
+    word-wrap: break-word;
+    transition: transform 0.3s ease;
+}
+
+.testimonial__card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
 }
 
 .testimonial__name {
@@ -18,43 +30,40 @@
 
 .testimonial__description {
     font-size: var(--small-font-size);
+    word-wrap: break-word;
 }
 
-.swiper-pagination-bullet {
-    background-color: var(--text-color);
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--title-color);
-}
-.swiper {
-    cursor: grab;
-}
-
-.swiper-slide {
-    cursor: grabbing;
-}
-
-/* For Large device */
-
-@media screen and (max-width: 992px){
-    .testimonial__container{
-        width:initial;
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .testimonial {
+        padding: 1.5rem 0; /* Adjust padding for medium devices */
     }
-    .testimonial__card{
+
+    .testimonial__card {
         padding: 1.25rem 1.5rem;
     }
-
 }
-/* For Medium device */
-@media screen and (max-width: 768px){
 
-
+@media screen and (max-width: 768px) {
+    .testimonial__card {
+        padding: 1rem 1.25rem;
+        font-size: 0.9rem;
+        border-radius: 1rem;
+    }
 }
-@media screen and (max-width: 576px){
 
-}/* For Small device */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 576px) {
+    .testimonial__card {
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+        border-radius: 1rem;
+    }
+}
 
-
+@media screen and (max-width: 350px) {
+    .testimonial__card {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+        border-radius: 0.75rem;
+    }
 }

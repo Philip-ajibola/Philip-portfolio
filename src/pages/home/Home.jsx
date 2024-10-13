@@ -29,7 +29,7 @@ const Home = () => {
                 <Skills/>
                 <Projects/>
                 <Qualification/>
-                {/*<Testimonials/>*/}
+                <Testimonials/>
                 {/*<Contact/>*/}
             </div>
 
