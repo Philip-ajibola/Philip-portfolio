@@ -9,7 +9,7 @@
 }
 
 .qualification__button {
-    font-size: 1.2rem; /* Reduced size for "Education" and "Experience" buttons */
+    font-size: 1.2rem;
     font-weight: var(--font-medium);
     color: var(--title-color);
     margin: 0 var(--mb-1);
@@ -80,13 +80,12 @@
     transform: translate(6px, -7px);
 }
 
-/* Reduced font size for "Qualification" and "My personal journey" */
 .section__title {
-    font-size: 1.8rem; /* Adjusted smaller font size for the title */
+    font-size: 1.8rem;
 }
 
 .section__subtitle {
-    font-size: 1rem; /* Adjusted smaller font size for the subtitle */
+    font-size: 1rem;
 }
 
 /* For Large device */
@@ -97,7 +96,7 @@
     }
 }
 
-/* For Medium device */
+
 @media screen and (max-width: 768px) {
     .qualification__container {
         margin-left: var(--mb-1-5);
