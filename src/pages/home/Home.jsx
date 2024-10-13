@@ -22,12 +22,11 @@ const Home = () => {
 
                     <Data />
                 </div>
-
-                {/*<ScrollDown />*/}
+                <ScrollDown />
 
                 {/* Render the About component */}
-                {/*<About />*/}
-                {/*<Skills/>*/}
+                <About />
+                <Skills/>
                 {/*<Projects/>*/}
                 {/*<Qualification/>*/}
                 {/*<Testimonials/>*/}
