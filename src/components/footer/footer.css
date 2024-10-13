@@ -136,6 +136,8 @@
     .footer__list {
         flex-direction: column; /* Stack links vertically on smaller screens */
         row-gap: 1rem; /* Add gap between links */
+        justify-content: center;
+        align-items: center;
     }
 
     .footer__social {

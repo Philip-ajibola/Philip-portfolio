@@ -189,12 +189,15 @@
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
+
+
 /*================== BREAKPOINTS ==================*/
 /* For Medium devices */
+/* For medium devices (up to 768px) */
 @media screen and (max-width: 768px) {
     .header {
         top: initial;
-        bottom: 0;
+        bottom: 0; /* Move the header to the bottom for mobile view */
     }
 
     .nav {
@@ -206,57 +209,63 @@
         position: fixed;
         bottom: -100%;
         left: 0;
-        width: 100%;
+        width: 100vw; /* Ensure the menu takes up the full viewport width */
         background-color: var(--body-color);
-        padding: 2rem 1.5rem 4rem;
+        padding: 1.5rem 1rem 3rem; /* Reduce padding for mobile */
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
-        transition: 0.3s;
+        transition: bottom 0.3s; /* Transition only affects the bottom */
     }
 
-    /* When the menu is toggled, it should slide up */
+    /* Show the menu when toggled */
     .show_menu {
         bottom: 0;
     }
 
-    /* Grid layout for smaller screens */
+    /* Grid layout for the navigation links */
     .nav__list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+        gap: 1.5rem; /* Slightly reduce gap */
     }
 
-    /* Show close button and hamburger on smaller screens */
+    .nav__link {
+        font-size: 0.9rem; /* Slightly reduce font size */
+    }
+
+    /* Show the hamburger icon and close icon on mobile */
     .nav__icon, .nav__close, .nav__toggle {
         display: block;
     }
 
+    /* Close button */
     .nav__close {
         position: absolute;
         right: 1.3rem;
-        bottom: 0.5rem;
+        bottom: 1rem;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--title-color);
     }
 
+    /* Toggle button */
     .nav__toggle {
         font-size: 1.2rem;
         cursor: pointer;
     }
 
-    /* Close button hover effect */
-    .nav__close:hover {
-        color: var(--title-color-dark);
+    /* Styling for the logo and icons to fit smaller screens */
+    .nav__logo {
+        font-size: 1.2rem; /* Reduce the logo size */
     }
-}
 
-/* For small devices */
-@media screen and (max-width: 350px) {
-    .nav__menu {
-        padding: 2rem 0.25rem 4rem;
-    }
+    /* Smaller gap between nav items */
     .nav__list {
-        column-gap: 0;
+        gap: 1rem;
+    }
+
+    /* Box-sizing to ensure padding doesn't overflow */
+    * {
+        box-sizing: border-box;
     }
 }

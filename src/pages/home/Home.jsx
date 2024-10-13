@@ -23,15 +23,15 @@ const Home = () => {
                     <Data />
                 </div>
 
-                <ScrollDown />
+                {/*<ScrollDown />*/}
 
                 {/* Render the About component */}
-                <About />
-                <Skills/>
-                <Projects/>
-                <Qualification/>
-                <Testimonials/>
-                <Contact/>
+                {/*<About />*/}
+                {/*<Skills/>*/}
+                {/*<Projects/>*/}
+                {/*<Qualification/>*/}
+                {/*<Testimonials/>*/}
+                {/*<Contact/>*/}
             </div>
 
         </section>

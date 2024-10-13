@@ -15,7 +15,7 @@ export const ROUTE = [
 
             {
                 path: "/myPortfolio",
-                element: <Home/>,
+                // element: <Home/>,
             },
 
         ]
