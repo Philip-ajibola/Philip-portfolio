@@ -27,10 +27,10 @@ const Home = () => {
                 {/* Render the About component */}
                 <About />
                 <Skills/>
-                {/*<Projects/>*/}
-                {/*<Qualification/>*/}
-                {/*<Testimonials/>*/}
-                {/*<Contact/>*/}
+                <Projects/>
+                <Qualification/>
+                <Testimonials/>
+                <Contact/>
             </div>
 
         </section>
