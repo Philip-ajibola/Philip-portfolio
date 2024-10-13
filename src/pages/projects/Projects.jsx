@@ -70,7 +70,7 @@ const Projects = () => {
                     githubLink: "https://react-next-cent-fiuzb7rtr-abolaji-s-projects.vercel.app/"
                 },
                 {
-                    projectName: "Connectify Website",
+                    projectName: "Connectivity Website",
                     githubLink: "https://multilconnect-front-end.vercel.app/"
                 },
                 {
