@@ -162,6 +162,12 @@
 }
 
 /* For smaller mobile devices */
+/*@media  screen and (max-width: 386px){*/
+
+/*    .footer {*/
+/*        width: 414px;*/
+/*    }*/
+/*}*/
 @media screen and (max-width: 480px) {
     .footer__container {
         padding: 1rem 0 3rem;

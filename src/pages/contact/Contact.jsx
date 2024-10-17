@@ -1,45 +1,56 @@
 import React, { useState } from 'react';
 import "./contact.css";
+import  emailjs from "@emailjs/browser";
+import {toast} from "react-toastify";
 
 const Contact = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalMessage, setModalMessage] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
-
-    const Modal = ({ message, onClose }) => {
-        return (
-            <div className="modal">
-                <div className="modal__content">
-                    <i onClick={onClose} className="uil uil-times modal__close-icon"></i>
-                    <p>{message}</p>
-                </div>
-            </div>
-        );
+    // const [isModalOpen, setIsModalOpen] = useState(false);
+    const handleChange  = (e)=>{
+        setForm({...form,[e.target.name]: e.target.value})
     };
+    const [isLoading, setIsLoading] = useState(false);
+    const [form, setForm] = useState({name: "", email: "",message:""})
+
+    // const Modal = ({ message, onClose }) => {
+    //     return (
+    //         <div className="modal">
+    //             <div className="modal__content">
+    //                 <i onClick={onClose} className="uil uil-times modal__close-icon"></i>
+    //                 <p>{message}</p>
+    //             </div>
+    //         </div>
+    //     );
+    // };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         setIsLoading(true);
-
-        const formData = new FormData(event.target);
-        const response = await fetch("https://formspree.io/f/xqazvdep", {
-            method: "POST",
-            body: formData,
-            headers: {
-                Accept: "application/json"
+        console.log("Yes")
+        console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+        emailjs.send(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            {
+                from_name: form.name,
+                to_name: "Philip AJibola",
+                form_email: form.email,
+                to_email: "ajibolaphilip10@gmail.com",
+                message: form.message,
+            },
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+        ).then(()=> {
+            console.log("success")
+                setIsLoading(false);
+                toast.success('Message Sent Successfully ')
+                setForm({name:"",email: "",message: ""})
             }
-        });
+        ).catch((error)=>{
+            toast.error("something went wrong");
+            console.log(error)
+            }
 
-        setIsLoading(false);
+        )
 
-        if (response.ok) {
-            setModalMessage("Message sent successfully!");
-            setIsModalOpen(true);
-            event.target.reset();
-        } else {
-            setModalMessage("There was a problem sending your message.");
-            setIsModalOpen(true);
-        }
     };
 
     return (
@@ -54,7 +65,7 @@ const Contact = () => {
                         <div className="contact__card">
                             <i className="bx bx-mail-send contact__card-icon"></i>
                             <h3 className="contact__card-title">Email</h3>
-                            <span className="contact__card-data">Abisoyeabolaji2k21@gmail.com</span>
+                            <span className="contact__card-data">ajibolaphilip10@gmail.com</span>
                             <a href="mailto:Abisoyeabolaji2k21@gmail.com" className="contact__button">
                                 Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -64,7 +75,7 @@ const Contact = () => {
                         <div className="contact__card">
                             <i className="bx bxl-whatsapp contact__card-icon"></i>
                             <h3 className="contact__card-title">WhatsApp</h3>
-                            <span className="contact__card-data">+2348165269244</span>
+                            <span className="contact__card-data">+23409027531222</span>
                             <a href="https://wa.me/2348165269244" className="contact__button" target="_blank" rel="noopener noreferrer">
                                 Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -78,33 +89,27 @@ const Contact = () => {
                     <form className="contact__form" onSubmit={handleSubmit}>
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
-                            <input type="text" name="name" className="contact__form-input"
-                                   placeholder="Insert your name sir/ma" required />
+                            <input type="text" name="name" onChange={handleChange} className="contact__form-input"
+                                   placeholder="Insert your name sir/ma" value={form.name} required />
                         </div>
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Mail</label>
-                            <input type="email" name="email" className="contact__form-input"
+                            <input type="email" onChange={handleChange} value={form.email} name="email" className="contact__form-input"
                                    placeholder="Insert your email sir/ma" required />
                         </div>
                         <div className="contact__form-div contact__form-area">
                             <label className="contact__form-tag">Message</label>
-                            <textarea name="message" className="contact__form-input" placeholder="Write your message" required></textarea>
+                            <textarea name="message" onChange={handleChange} value={form.message} className="contact__form-input" placeholder="Write your message" required></textarea>
                         </div>
                         <button className="button button--flex" type="submit" disabled={isLoading}>
-                            {isLoading ? (
-                                <svg className="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
-                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
-                                </svg>
-                            ) : (
-                                "Send Message"
-                            )}
+                            {isLoading ?"Sending message...": "Send Message"
+                            }
                         </button>
                     </form>
                 </div>
             </div>
 
-            {isModalOpen && <Modal message={modalMessage} onClose={() => setIsModalOpen(false)} />}
+            {/*{isModalOpen && <Modal message={modalMessage} onClose={() => setIsModalOpen(false)} />}*/}
         </section>
     );
 };

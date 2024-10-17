@@ -28,6 +28,7 @@
 }
 
 .contact__card {
+    background-color: var(--title-color-dark);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     border-radius: 1rem;

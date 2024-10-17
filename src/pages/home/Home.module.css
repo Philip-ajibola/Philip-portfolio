@@ -165,9 +165,9 @@
     }
 }
 /* For Medium device */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
     .home__container{
-        padding: 0;
+        padding-top: 5.5rem;
         max-width: 100%;
     }
 

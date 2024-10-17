@@ -73,35 +73,12 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                             <div>
-                                <h3 className="qualification__title">Master of Science - Business Administration</h3>
-                                <span className="qualification__subtitle">Girne American University, Cyprus</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2019 - 2021 (Thesis pending)
-                                </div>
-                            </div>
-                            {/*<div>*/}
-                            {/*    <span className="qualification__rounder"></span>*/}
-                            {/*    <span className="qualification__line"></span>*/}
-                            {/*</div>*/}
-                        </div>
-
-                        <div className="qualification__data">
-                            {/*<div></div>*/}
-                            {/*<div>*/}
-                            {/*    <span className="qualification__rounder"></span>*/}
-                            {/*    <span className="qualification__line"></span>*/}
-                            {/*</div>*/}
-                            <div>
-                                <h3 className="qualification__title">Bachelor of Science - Pure and Industrial
-                                    Chemistry</h3>
+                                <h3 className="qualification__title">Ordinary National Diploma I-con Universal
+                                    Polytechnic Osogbo </h3>
                                 <span className="qualification__subtitle">University of Lagos, Nigeria</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> 2013 - 2017
+                                    <i className="uil uil-calendar-alt"></i> 2020 - 2022
                                 </div>
-                            </div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
                             </div>
                         </div>
                     </div>
@@ -135,20 +112,20 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                             <div>
-                                <h3 className="qualification__title">Medical Data Analyst</h3>
-                                <span className="qualification__subtitle">Damilola Clinic, Lagos, Nigeria</span>
+                                <h3 className="qualification__title">PERSONAL TEACHER</h3>
+                                <span className="qualification__subtitle">God's Glory, Ogun State, Nigeria</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> Jan 2021 - Sep 2023
+                                    <i className="uil uil-calendar-alt"></i> Jan 2021 - Sep 2022
                                 </div>
                             </div>
                         </div>
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Teaching Assistant</h3>
-                                <span className="qualification__subtitle">Girne American University, Cyprus</span>
+                                <h3 className="qualification__title">ELECTRICAL ELECTRONIC ENGINEER</h3>
+                                <span className="qualification__subtitle">Sunday's Company And Son's</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> Sep 2019 - Dec 2020
+                                    <i className="uil uil-calendar-alt"></i> Sep 2019 - Dec 2022
                                 </div>
                             </div>
                             <div>
@@ -157,20 +134,6 @@ const Qualification = () => {
                             </div>
                         </div>
 
-                        <div className="qualification__data">
-                            <div></div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 className="qualification__title">Public Relations Officer (PRO)</h3>
-                                <span className="qualification__subtitle">NYSC Secretariat, Ogun, Nigeria</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i> Mar 2018 - Feb 2019
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

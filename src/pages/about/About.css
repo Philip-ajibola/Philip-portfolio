@@ -23,7 +23,6 @@
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem 1.25rem ;
-    box-shadow: 8px 8px 8px rgba(248, 246, 246, 0.2);
 }
 .about__icon{
     font-size: 1.5rem;
@@ -41,7 +40,7 @@
 }
 
 .about__description{
-    font-size: var(--smaller-font-size);
+    font-size: var(--tiny-font-size);
     font-weight: var(--font-medium);
     padding: 0 4rem 0 0;
     margin-bottom: var(--mb-2-5);
