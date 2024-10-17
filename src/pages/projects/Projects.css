@@ -7,8 +7,10 @@
 .services__content {
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--container-color);
+    background-color: var(--title-color-dark);
     padding: 6rem 0 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 8px rgba(248, 246, 246, 0.2);
 }
 
 .services__icon {
@@ -63,7 +65,7 @@
 .services__modal-content {
     width: 500px;
     max-height: 80vh;
-    background-color: var(--container-color);
+    background-color: var(--title-color-dark);
     padding: 4.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

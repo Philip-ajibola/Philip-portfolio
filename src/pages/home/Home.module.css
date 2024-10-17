@@ -1,13 +1,21 @@
+
+.home__section{
+    width:100%;
+    margin: 0;
+}
 .home__container{
+    width: 1200px;
     margin-left: 100px;
     padding: 0;
 }
 
 .home__content{
     grid-template-columns: 116px repeat(2, 1fr);
-    padding: 5.5rem;
+    padding-top: 5.5rem;
+    /*padding: 5.5rem;*/
     column-gap: 2rem;
     align-items: center;
+    width: 100%;
 }
 
 .home__social{
@@ -23,6 +31,7 @@
 
 .home__socialIcon:hover{
     color: var(--title-color-dark);
+    padding: 0.2rem 0.4rem;
 }
 
 .home__title{
@@ -63,7 +72,7 @@
 
 }
 .home__img{
-    background-image: url('../../assets/img/myPicture03.jpg');
+    background-image: url('../../assets/img/philip.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

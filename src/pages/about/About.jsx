@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
-import AboutImg from "../../assets/img/myPicture03.jpg";
-import CV from "../../assets/img/ABISOYE-ABOLAJI CV.pdf"
+import AboutImg from "../../assets/img/philip2.jpg";
+import CV from "../../assets/img/philip-Ajibiola-resume.pdf"
 import Info from "./Info"
 const About = () => {
     return (
@@ -15,14 +15,12 @@ const About = () => {
                     <Info/>
 
                     <p className="about__description">
-                        My journey in coding began with a deep curiosity
-                        for how websites function behind the scenes.
-                        I’m passionate about breaking down complex challenges
-                        and building efficient software that enhances the user
-                        experience. I thrive in team settings, value collaboration,
-                        and am always eager to explore new ideas in software
-                        development.Ready to tackle new challenges and contribute
-                        to innovative projects.Let’s connect!
+                        My coding journey started with a deep curiosity about how websites work behind the scenes.
+                        I was thrilled the day I executed my very first line of code: print("Hello, World!").
+                        I'm driven by a passion for solving complex problems and developing efficient software that
+                        elevates user experiences. I thrive in collaborative environments, value teamwork, and constantly
+                        seek out opportunities to explore new ideas in software development. I’m always excited to take on
+                        new challenges and contribute to cutting-edge projects. Let’s connect
                     </p>
                     <a download="" href={CV} className="button button--flex">
                         Download CV

@@ -58,24 +58,36 @@ const Projects = () => {
             icon: "uil-web-grid",
             projects: [
                 {
-                    projectName: "Contact Management Website",
-                    githubLink: "https://contact-managment-app-using-react.vercel.app/"
+                    projectName: "Logistic Application",
+                    githubLink: "https://deelogistics-dee-dayos-projects.vercel.app/"
                 },
                 {
                     projectName: "Login/SignUp Website",
                     githubLink: "https://login-page-ten-kappa.vercel.app/"
                 },
                 {
-                    projectName: "Next-Cent App Design",
-                    githubLink: "https://react-next-cent-fiuzb7rtr-abolaji-s-projects.vercel.app/"
+                    projectName: "3D-portfolio",
+                    githubLink: "https://philip-3d-portfolio.vercel.app"
                 },
                 {
                     projectName: "Connectivity Website",
                     githubLink: "https://multilconnect-front-end.vercel.app/"
                 },
                 {
-                    projectName: "BeeJhay Gadget App",
-                    githubLink: "https://bee-jhay-gadget-n77vawvzu-abolaji-s-projects.vercel.app/"
+                    projectName: "Connectivity Mobile Application",
+                    githubLink: "https://github.com/MultiConnectWeb/multi_connect_mobile"
+                },
+                {
+                    projectName: "E-store Application",
+                    githubLink: "https://bobby-store-nu.vercel.app/"
+                },
+                {
+                    projectName: "Uber Clone",
+                    githubLink: "https://github.com/Philip-ajibola/uber_clone.git"
+                },
+                {
+                    projectName: "Chat Application",
+                    githubLink: "https://github.com/Philip-ajibola/chatApplication"
                 },
                 {
                     projectName: "Portfolio Website",
@@ -95,23 +107,35 @@ const Projects = () => {
             projects: [
                 {
                     projectName: "Movie Hub REST API",
-                    githubLink: "https://github.com/Abolaji2K21/Movie_Hub"
+                    githubLink: "https://github.com/Philip-ajibola/MavericksHub"
                 },
                 {
-                    projectName: "ServiceMatch API",
+                    projectName: "Connectivity API",
                     githubLink: "https://github.com/MultiConnectWeb/MultiConnect"
                 },
                 {
-                    projectName: "Contact Management API",
-                    githubLink: "https://github.com/Abolaji2K21/Cloned_Contact_App_For_Practice"
+                    projectName: "Library Management API",
+                    githubLink: "https://github.com/Philip-ajibola/LibraryManagementSystemApp"
                 },
                 {
                     projectName: "Blog Hub REST API",
-                    githubLink: "https://github.com/Abolaji2K21/Modern_Blog"
+                    githubLink: "https://github.com/Philip-ajibola/NaijaBlog"
                 },
                 {
-                    projectName: "Productivity Toolbox API ",
-                    githubLink: "https://github.com/Abolaji2K21/Java_Script_Gate/"
+                    projectName: "Event Management System API ",
+                    githubLink: "https://github.com/Philip-ajibola/eventBookingRepo"
+                },
+                {
+                    projectName: "E-Store API ",
+                    githubLink: "https://github.com/Philip-ajibola/E-store"
+                },
+                {
+                    projectName: "Expense Tracker Api ",
+                    githubLink: "https://github.com/Philip-ajibola/expenseTracker"
+                },
+                {
+                    projectName: "Account Management Api ",
+                    githubLink: "https://github.com/Philip-ajibola/account_management_system"
                 },
 
             ]
@@ -122,24 +146,48 @@ const Projects = () => {
             icon: "uil-brain",
             projects: [
                 {
-                    projectName: "Archery Game Algorithm",
-                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/ArcheryGame"
-                },
-                {
-                    projectName: "Logistic Workflow Algorithm",
-                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/Back_To_Sender"
+                    projectName: "Student Grade Algorithm",
+                    githubLink: "https://github.com/Philip-ajibola/FireDrill/tree/main/src/studentGrade"
                 },
                 {
                     projectName: "Tic Tac Toe Game Algorithm",
-                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/Tic_Tac_Toe"
+                    githubLink: "https://github.com/Philip-ajibola/FireDrill/tree/main/src/ticTacTo"
+                },
+                {
+                    projectName: "Advance Tic Tac Toe Game Algorithm",
+                    githubLink: "https://github.com/Philip-ajibola/FireDrill/tree/main/src/ticTacToOverAmbitious"
                 },
                 {
                     projectName: "TurtleGraphics Algorithm",
-                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/TurtleGraphics"
+                    githubLink: "https://github.com/Philip-ajibola/FireDrill/tree/main/src/turtle"
+                },
+                {
+                    projectName: "Checkout Application Algorithm",
+                    githubLink: "https://github.com/Philip-ajibola/FireDrill/blob/main/src/CheckOut.java"
+                },
+                {
+                    projectName: "GeoPolitical Zone Algorithm",
+                    githubLink: "https://github.com/Philip-ajibola/FireDrill/blob/main/src/GeoPoliticalZone.java"
                 },
                 {
                     projectName: "SevenSegment Algorithm",
-                    githubLink: "https://github.com/Abolaji2K21/taskForFirstGate-/tree/main/src/SevenSegmentDisplay"
+                    githubLink: "https://github.com/Philip-ajibola/FireDrill/blob/main/src/SevenSegmentDisplay.java"
+                },
+                {
+                    projectName: "Credit Card Validator",
+                    githubLink: "https://github.com/Philip-ajibola/FireDrill/tree/main/src/creditCardValidator"
+                },
+                {
+                    projectName: "Credit Card Validator",
+                    githubLink: "https://github.com/Philip-ajibola/FireDrill/tree/main/src/creditCardValidator"
+                },
+                {
+                    projectName: "Solving Algorithm using Golang",
+                    githubLink: "https://github.com/Philip-ajibola/golang_task"
+                },
+                {
+                    projectName: "Solving Algorithm using Python",
+                    githubLink: "https://github.com/Philip-ajibola/pythonProject"
                 },
             ]
         }

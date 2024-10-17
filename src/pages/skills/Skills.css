@@ -1,23 +1,43 @@
 .skills__container {
-    grid-template-columns: repeat(2, 350px);
-    column-gap: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 40px;
     justify-content: center;
 }
-
-.skills__content{
-    background-color: var(--container-color);
+.section__title{
+    margin-bottom: 3rem;
+}
+.mother{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    background-color: var(--title-color-dark);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
+    height: 500px;
+    box-shadow: 8px 8px 8px rgba(248, 246, 246, 0.2);
 }
-
-.skills__title{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    text-align: center;
-    margin-bottom: var(--mb-1-5);
+.skills__content{
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+.skills__content_1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 20px;
+    height: 500px;
+    /*flex-wrap: wrap;*/
+    background-color: var(--title-color-dark);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    box-shadow: 8px 8px 8px rgba(248, 246, 246, 0.2);
 
+}
 .skills__box{
     display: flex;
     justify-content: center;
@@ -51,14 +71,26 @@
 
 }
 
-/*================== BREAKPOINTS ==================*/
-/* For Large device */
+.stacks{
+    display: flex;
+
+}
+.skills__image{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.skills__titles{
+    display: block;
+}
+
+
 
 @media screen and (max-width: 992px){
-   .skills__container{
-       grid-template-columns: max-content;
-       row-gap: 2rem;
-   }
+    .skills__container{
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
 
 
 }

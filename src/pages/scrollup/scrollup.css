@@ -2,7 +2,7 @@
     position: fixed;
     right: 2.5rem;
     bottom: -20%;
-    background-color: var(--title-color);
+    background-color: var(--title-color-dark);
     opacity: 0.8;
     padding: 0.3rem 0.5rem;
     border-radius: 0.4rem;
@@ -18,7 +18,7 @@
 }
 
 .scrollup:hover {
-    background-color: var(--title-color-dark);
+    padding: 0.5rem 0.7rem;
 }
 
 .show-scroll {

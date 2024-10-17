@@ -5,7 +5,7 @@ const Data = () => {
 
     return (
         <div className={Styles.home__data}>
-            <h1 className={Styles.home__title}>Abisoye Abolaji
+            <h1 className={Styles.home__title}>Philip Ajibola
                 <svg
                     width="36"
                     height="36"
@@ -57,8 +57,12 @@ const Data = () => {
                 </svg>
             </h1>
             <h3 className={Styles.home__subtitle}> Software Engineer </h3>
-            <p className={Styles.home__description}> I'm a passionate software engineer based in Lagos, Nigeria. I specialize
-                in building innovative and efficient solutions that drive impactful digital experiences.
+            <p className={Styles.home__description}> I'm a dedicated software engineer based in Lagos, Nigeria, with a passion
+                for creating innovative, efficient, and scalable solutions. I specialize in developing high-performance
+                applications that enhance user experience and drive impactful digital transformation. With a strong foundation
+                in both front-end and back-end development, I enjoy solving complex technical challenges and turning ideas
+                into robust, real-world solutions. My goal is to leverage technology to build products that not only meet
+                users' needs but also provide meaningful and lasting value.
             </p>
 
             <a href="#contact" className="button button--flex">

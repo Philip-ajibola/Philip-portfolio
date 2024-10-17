@@ -28,7 +28,6 @@
 }
 
 .contact__card {
-    background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     border-radius: 1rem;
@@ -88,7 +87,7 @@
     height: 100%;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(227, 224, 224);
     background: none;
     color: var(--text-color);
     outline: none;

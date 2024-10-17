@@ -142,6 +142,7 @@
     left: 0;
     z-index: 1000;
     background-color: var(--body-color);
+    border-bottom: 2px solid var(--title-color-dark);
 }
 
 /* Navbar styles */
@@ -182,6 +183,8 @@
 /* Active link styles */
 .active_link, .nav__link:hover {
     color: var(--title-color-dark);
+    font-weight: bolder;
+    font-size: large;
 }
 
 /* Scroll effect for header */
